@@ -13,12 +13,13 @@ public class SinhVienIT extends SinhVien{
     private double diemcss;
     private double diemhtml;
 
-    public SinhVienIT(String hoten, String nganh, double diemjava, double diemcss, double diemhtml) {
-        super(hoten, nganh);
+    public SinhVienIT(String hoten, double diemjava, double diemcss, double diemhtml) {
+        super(hoten,"IT");
         this.diemjava = diemjava;
         this.diemcss = diemcss;
         this.diemhtml = diemhtml;
     }
+
     @Override
     public double getdiem(){
         return(2*diemjava+diemhtml+diemcss)/4;
